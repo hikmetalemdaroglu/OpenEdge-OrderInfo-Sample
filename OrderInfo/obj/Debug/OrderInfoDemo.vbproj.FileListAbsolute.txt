@@ -1,0 +1,14 @@
+D:\SourceVS\vb\OrderInfo\obj\Debug\OrderInfoDemo.vbproj.AssemblyReference.cache
+D:\SourceVS\vb\OrderInfo\obj\Debug\Demo.Demo.resources
+D:\SourceVS\vb\OrderInfo\obj\Debug\OrderInfoDemo.vbproj.GenerateResource.cache
+D:\SourceVS\vb\OrderInfo\obj\Debug\OrderInfoDemo.vbproj.CoreCompileInputs.cache
+D:\SourceVS\vb\OrderInfo\bin\Demo.exe
+D:\SourceVS\vb\OrderInfo\bin\Demo.pdb
+D:\SourceVS\vb\OrderInfo\bin\Demo.xml
+D:\SourceVS\vb\OrderInfo\bin\OrderInfo.dll
+D:\SourceVS\vb\OrderInfo\bin\Progress.Messages.dll
+D:\SourceVS\vb\OrderInfo\bin\Progress.o4glrt.dll
+D:\SourceVS\vb\OrderInfo\obj\Debug\OrderInfoDemo.vbproj.CopyComplete
+D:\SourceVS\vb\OrderInfo\obj\Debug\Demo.exe
+D:\SourceVS\vb\OrderInfo\obj\Debug\Demo.xml
+D:\SourceVS\vb\OrderInfo\obj\Debug\Demo.pdb

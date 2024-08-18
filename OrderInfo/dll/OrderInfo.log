@@ -1,0 +1,69 @@
+
+**  ProxyGen, Progress Version 11.6
+
+** Checking for existence of .r files ...
+
+** Processing non-persistent procedures ...
+
+** Processing: D:\sports2000\AppService\OrderInfo\AddCustomer.r ...
+   -- Parsing r-code ...
+       MAIN D:\sports2000\AppService\OrderInfo\AddCustomer.p 
+          INPUT NAME CHARACTER
+          INPUT phone CHARACTER
+          INPUT email CHARACTER
+          OUTPUT CustomerNumber INTEGER
+   -- No customizations; Validation not necessary
+
+** Processing: D:\sports2000\AppService\OrderInfo\FindCustomerByName.r ...
+   -- Parsing r-code ...
+       MAIN D:\sports2000\AppService\OrderInfo\FindCustomerByName.p 
+          INPUT NAME CHARACTER
+          INPUT-OUTPUT CustomerNumber INTEGER
+   -- No customizations; Validation not necessary
+
+** Processing: D:\sports2000\AppService\OrderInfo\FindCustomerByNum.r ...
+   -- Parsing r-code ...
+       MAIN D:\sports2000\AppService\OrderInfo\FindCustomerByNum.p 
+          INPUT CustomerNumber INTEGER
+          OUTPUT CustomerName CHARACTER
+   -- No customizations; Validation not necessary
+
+** Processing procedure objects ...
+
+** Processing: D:\sports2000\AppService\OrderInfo\CustomerOrder.r ...
+   -- Parsing r-code ...
+       MAIN D:\sports2000\AppService\OrderInfo\CustomerOrder.p 
+          INPUT custNum INTEGER
+       PROCEDURE UpdateOrderDetails 
+          INPUT OrderDetails TABLE
+       PROCEDURE GetOrderDetails 
+          OUTPUT OrderDetails TABLE
+       FUNCTION GetTotalOrdersByNumber Returns: INTEGER
+          INPUT Threshold DECIMAL
+       FUNCTION GetTotalOrdersByDollar Returns: DECIMAL
+          INPUT Threshold DECIMAL
+       TABLE: OrderDetails
+          OrderNum INTEGER
+          SalesRep CHARACTER
+          OrderDate DATE
+          ShipDate DATE
+          TotalDollars DECIMAL
+          OrderStatus CHARACTER
+   -- No customizations; Validation not necessary
+
+** Checking method and parameter names ...
+
+** Generating .NET proxies ...
+   Creating AssemblyInfo.cs ...
+   Creating OrderDetailsSchema.cs ...
+   Creating OrderInfo.cs ...
+   Creating CustomerOrder.cs ...
+   Creating strongly typed datatable classes ...
+       C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe /t:exe /out:D:\SourceVS\vb\OrderInfo\dll\OrderProxy\StrongTypesNS\OrderDetails.exe D:\SourceVS\vb\OrderInfo\dll\OrderProxy\StrongTypesNS\OrderDetailsSchema.cs 
+       D:\SourceVS\vb\OrderInfo\dll\OrderProxy\StrongTypesNS\OrderDetails.exe 
+       C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\xsd.exe /d /n:OrderProxy.StrongTypesNS D:\SourceVS\vb\OrderInfo\dll\OrderProxy\StrongTypesNS\OrderDetails.xsd 
+   Compiling .NET proxies and creating .dll ...
+       C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe  /t:library "/r:C:\dlc1132\dotnet\deploy\signed\Progress.o4glrt.dll" /out:D:\SourceVS\vb\OrderInfo\dll\OrderProxy\OrderInfo.dll D:\SourceVS\vb\OrderInfo\dll\OrderProxy\StrongTypesNS\OrderDetails.cs D:\SourceVS\vb\OrderInfo\dll\OrderProxy\CustomerOrder.cs D:\SourceVS\vb\OrderInfo\dll\OrderProxy\OrderInfo.cs D:\SourceVS\vb\OrderInfo\dll\OrderProxy\AssemblyInfo.cs 
+   Deleting intermediate files ...
+
+** Generation complete
